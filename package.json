@@ -1,0 +1,33 @@
+{
+  "name": "sb-release-notes",
+  "version": "0.0.1",
+  "description": "A release note generator for Saddleback devs",
+  "main": "lib/sb-release-notes.js",
+  "scripts": {
+    "test": "grunt jasmine"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "*",
+    "grunt": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-coffeelint": "*",
+    "grunt-contrib-nodeunit": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jasmine": "*",
+    "grunt-contrib-watch": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielma/release-notes"
+  },
+  "keywords": [
+    "saddleback"
+  ],
+  "author": "Daniel Ma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielma/release-notes/issues"
+  },
+  "homepage": "https://github.com/danielma/release-notes"
+}
