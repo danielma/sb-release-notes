@@ -1,0 +1,1 @@
+exclude = "{$exclude,build,bin,${CWD}/lib}"
