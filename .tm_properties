@@ -1,2 +1,2 @@
-exclude          = "{$exclude,build,bin,${CWD}/lib}"
+exclude          = "{$exclude,build,dist,bin,${CWD}/lib}"
 projectDirectory = "$CWD"

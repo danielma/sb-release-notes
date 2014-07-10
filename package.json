@@ -10,16 +10,19 @@
   "devDependencies": {
     "coffee-script": "*",
     "grunt": "*",
+    "uglify-js": "~2.4",
     "grunt-contrib-coffee": "*",
     "grunt-coffeelint": "*",
     "grunt-contrib-nodeunit": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-jasmine": "*",
-    "grunt-contrib-watch": "*"
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-watch": "*",
+    "banners": "*"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielma/release-notes"
+    "url": "https://github.com/danielma/sb-release-notes"
   },
   "keywords": [
     "saddleback"
@@ -27,7 +30,7 @@
   "author": "Daniel Ma",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danielma/release-notes/issues"
+    "url": "https://github.com/danielma/sb-release-notes/issues"
   },
-  "homepage": "https://github.com/danielma/release-notes"
+  "homepage": "https://github.com/danielma/sb-release-notes"
 }
