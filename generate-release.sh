@@ -5,7 +5,9 @@ usage="$(basename "$0") [first commit] [second commit] -- program to generate re
 where:
     -h             show this help text
     first commit   used as base for compare - default: HEAD~1
-    second commit  used to calculate changed files - default: HEAD"
+    second commit  used to calculate changed files - default: HEAD
+
+commits can be any valid git commit reference - SHA value or HEAD~x"
 
 seed=42
 while getopts ':h:' option; do
