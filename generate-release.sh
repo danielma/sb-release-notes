@@ -1,5 +1,30 @@
 #!/bin/bash
 
+usage="$(basename "$0") [first commit] [second commit] -- program to generate release notes for saddleback devs
+
+where:
+    -h             show this help text
+    first commit   used as base for compare - default: HEAD~1
+    second commit  used to calculate changed files - default: HEAD"
+
+seed=42
+while getopts ':h:' option; do
+  case "$option" in
+    h) echo "$usage"
+       exit
+       ;;
+    :) printf "missing argument for -%s\n" "$OPTARG" >&2
+       echo "$usage" >&2
+       exit 1
+       ;;
+   \?) printf "illegal option: -%s\n" "$OPTARG" >&2
+       echo "$usage" >&2
+       exit 1
+       ;;
+  esac
+done
+shift $((OPTIND - 1))
+
 first_commit="HEAD~1"
 if [[ -n "$1" ]]; then
   first_commit=$1
